@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.parallax-1 {
+    background-image: url('https://www.reuters.com/resizer/v2/OWPZZT5DVJL2HB3YQQCW2EYLQA.jpg?auth=b19a5e9be55024f4b83b4fa5eb5cfe84f27e5787c34825a331770fde478508d1&width=3500&quality=80');
+}
+.parallax-1 p,
+.parallax-2 p,
+.text-section{
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 200px;
+}
+
+
+.parallax-2 {
+    background-image: url('https://d3i6fh83elv35t.cloudfront.net/static/2023/01/2023-01-19T145027Z_1707837036_RC2LTY909VNQ_RTRMADP_3_USA-WEATHER-BIDEN-1024x683.jpg');
+}
