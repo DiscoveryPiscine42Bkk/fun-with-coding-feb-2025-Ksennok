@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: rgb(10, 177, 23);
+  }
