@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+            let left = document.getElementById('left').value;
+            let right = document.getElementById('right').value;
+            let operator = document.getElementById('operator').value;
+
+            if (!Number.isInteger(Number(left)) || !Number.isInteger(Number(right)) || left < 0 || right < 0) {
+                alert('Error :(');
+                console.log('Error :(');
+                return;
+            }
+
+            if ((operator === '/' || operator === '%') && right == 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+
+            let result;
+            switch (operator) {
+                case '+': result = parseInt(left) + parseInt(right); break;
+                case '-': result = parseInt(left) - parseInt(right); break;
+                case '*': result = parseInt(left) * parseInt(right); break;
+                case '/': result = parseInt(left) / parseInt(right); break;
+                case '%': result = parseInt(left) % parseInt(right); break;
+                default: return;
+            }
+
+            alert("Result: " + result);
+            console.log("Result: " + result);
+        }
+
+        setInterval(() => {
+            alert("Please, use me...");
+        }, 30000);
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div>
+        <input type="number" id="left" placeholder="Left operand">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="number" id="right" placeholder="Right operand">
+        <input type="button" value="Try me!" onclick="calculate()">
+    </div>
+</body>
+</html>
