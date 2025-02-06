@@ -1,0 +1,91 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(155, 88, 149);
+  }
+  
+  .profile-card {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-card h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px auto;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+  
+  .profile-card h3 {
+    margin: 15px 0;
+  }
+  
+  .profile-card p {
+    color: grey;
+    margin: 10px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .social-icons img {
+    width: 30px;
+  }
+  
+  button {
+    background-color: rgb(160, 54, 54);
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+  }
+  .info-container {
+    display: grid;
+    grid-template-columns: auto auto; /* สร้าง 2 คอลัมน์ */
+    gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+    justify-content: center;
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .info-container p {
+    margin: 5px 0;
+  }
+  .login-btn {
+    background-color: rgb(33, 150, 243); /* Blue button */
+    width: 100%;
+    color: white;
+    padding: 8px 0;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0; /* Adds space below the button */
+    border-radius: 5px;
+  }
+  
+  .login-btn:hover {
+    background-color: rgb(25, 118, 210); /* Darker blue on hover */
+  }
+  
+  button:hover {
+    background-color: rgb(39, 153, 35);
+  }
